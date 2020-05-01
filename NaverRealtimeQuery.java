@@ -15,7 +15,6 @@ public class NaverTest {
         }
         System.out.println(document.select("li.ranking_item span.item_title").toString());
         String[] rankList = document.select("li.ranking_item span.item_title").toString().split("<span class=\"item_title\">");
-        int rank = -1;
         for (int i = 1; i < rankList.length; i++) {
             System.out.println(i + ". " + rankList[i].replace("\n", "").replace("</span>", ""));
         }
